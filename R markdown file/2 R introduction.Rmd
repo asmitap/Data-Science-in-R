@@ -1,0 +1,62 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+R is data analysis software which is used by analysts, quants, statisticians, data scientists and others.
+
+## R Language
+- R software is used for basic programming.
+- R software is used for data manipulation.
+- R software is used for data summary and visualization.
+- R software is used for supervised learning model.
+- R software is used for un-supervised learning model.
+- R software is used for communication 
+- And many more...
+
+
+## Tools
+- Software : R
+- IDE : R Studio
+- Packages : Base, tidyverse and many more...
+
+## History of R
+- First implemented in 1990’s by Ross Ihaka and Robert Gentleman at University 
+  of Auckland, New Zealand
+- Established as an open source project in 1995 by Ross Ihaka
+- R project is managed by R core group since 1997
+- R 1.0.0 was released in February 2000
+- R is closely modeled on the S language for statistical computing conceived by 
+  John Chambers, Rick Baker, Trevor Hastie, Allan Wilks and others at Bell Labs
+  in mid 1970s, and made publicly available in 1980s. (But, S and Splus software
+  are commercial!)
+  <br>
+  
+## R Studio
+RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management
+
+![data-science](E:/Data Science Tu/stastical computing with R/Statistical Computing with R/image/r_studio.png)
+##  Rmarkdown
+
+RMarkdown is a reporting tool provided by R. With the help of Rmarkdown, create high quality reports of R code. 
+
+The output format of Rmarkdown can be:
+
+  - HTML
+  - PDF
+  - WORD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
