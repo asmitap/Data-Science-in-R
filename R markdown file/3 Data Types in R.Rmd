@@ -1,0 +1,112 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+While doing programming variable is use to store information.The store information of various data types like character, wide character, integer, floating point, double floating point, Boolean etc. Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory.The variables are assigned with R-Objects and the data type of the R-object becomes the data type of the variable. 
+
+## Types of R objects
+
+### 1. Vectors
+A sequence of elements which share the same data type is known as vector. A vector supports logical, integer, double, character, complex, or raw data type.
+
+```{r}
+#example: vector
+apple <- c('red','green','yellow')
+print(apple)
+print(class(apple))
+```
+
+### 2. Lists
+A list is an R-object which can contain many different types of elements inside it like vectors, functions and even another list inside it.
+```{r}
+# example list
+listitems <- list(c(4,3,2), 20.2,'hello')
+print(listitems)
+print(class(listitems))
+```
+### 3. Matrices
+A matrix is a two-dimensional rectangular data set. It can be created using a vector input to the matrix function.
+```{r}
+# example matrices
+matr = matrix( c('a','b','c','d','e','f'), nrow = 2, ncol = 3, byrow = TRUE)
+print(matr)
+class(matr)
+```
+### 4. Arrays
+While matrices are confined to two dimensions, arrays can be of any number of dimensions. The array function takes a dim attribute which creates the required number of dimension
+```{r}
+# example array
+a <- array(c('apple','mango','orange'), dim=c(3,3,2))
+print(a)
+print(class(a))
+```
+### 5. Factors
+
+Factors are the r-objects which are created using a vector. It stores the vector along with the distinct values of the elements in the vector as labels. The labels are always character irrespective of whether it is numeric or character or Boolean etc. in the input vector. They are useful in statistical modeling.
+```{r}
+# Create a vector.
+apple_colors <- c('green','green','yellow','red','red','red','green')
+
+# Create a factor object.
+factor_apple <- factor(apple_colors)
+
+# Print the factor.
+print(factor_apple)
+print(nlevels(factor_apple))
+```
+### 6. Data Frames
+
+Data frames in R language are the type of data structure that is used to store data in a tabular form which is of two dimensional. The data frames are special categories of list data structure in which the components are of equal length. R languages support the built-in function i.e. data.frame() to create the data frames and assign the data elements. Data frame name is used to modify and retrieve data elements from the data frames. It is structured as column name by the component name also, structured as rows by the component values. It is widely used data structure while developing the machine learning models in data science projects.
+
+```{r}
+# dataframe example
+df <- data.frame(x=c(1,2,3),y=c(2,3,4),z=c(3,4,5))
+print(df)
+print(class(df))
+```
+## rbind() - row bind
+The rbind function is is used to combine several vectors, matrices or dataframe by rows.
+```{r}
+# rbind example
+x1 <- c(7, 4, 4, 9)                  # Column 1 of data frame
+x2 <- c(5, 2, 8, 9)                  # Column 2 of data frame
+x3 <- c(1, 2, 3, 4)                  # Column 3 of data frame
+data_1 <- data.frame(x1, x2, x3)     # Create example data frame
+
+vector_1 <- c(9, 8, 7)               # Create example vector
+
+rbind(data_1, vector_1)              # rbind vector to data frame
+```
+## cbind() - column bind
+
+It is used to combine two data frames with the same number of multiple rows into a single data frame.
+```{r}
+# cbind example
+data_1 <- data.frame(x1 = c(7, 3, 2, 9, 0),          # Column 1 of data frame
+                     x2 = c(4, 4, 1, 1, 8),          # Column 2 of data frame
+                     x3 = c(5, 3, 9, 2, 4))          # Column 3 of data frame
+y1 <- c(9, 8, 7, 6, 5)                               # Create vector
+data_new1 <- cbind(data_1, y1)                       # cbind vector to data frame
+print(data_new1)                                       
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
