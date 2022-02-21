@@ -1,0 +1,58 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+## List in R
+R list is the object which contains elements of different types – like strings, numbers, vectors and another list inside it. R list can also contain a matrix or a function as its elements. The list is created using the list () function in R. 
+
+## How to create a list containing strings, numbers, vectors and a logical value in R?
+Create list containing string, numbers, vectors and logical values using list() function. 
+```{r}
+list_data <- list("kathmandu", "pokhara", c(1,2,3), TRUE, 22.4) 
+print(list_data) 
+```
+
+## How to name the list element in R ?
+The list can be created using list() function in R. Named list is also created with the same function by specifying the names of the elements to access them. 
+```{r}
+list_data <- list("a"="kathmandu", "b"="pokhara", "c"=c(1,2,3), "d"=TRUE, "e"=22.4) 
+print(list_data) 
+```
+## How to assess list element in R?
+```{r}
+list_data <- list("a"="kathmandu", "b"="pokhara", "c"=c(1,2,3), "d"=TRUE, "e"=22.4) 
+# if name assign to list element then $ is use
+print(list_data$a)
+# to assess the list element using location
+print(list_data[1])
+# access element of vectors
+print(list_data[[3]][[3]])
+```
+## How to manipulate list element in R ?
+List manipulation occurs by create, read, update and delete in list. 
+```{r}
+# create list data
+list_data <- list("ktm","pkr",c(1,2,3), 34)
+# read_list data
+print(list_data)
+```
+```{r}
+# add new element to list
+list_data[4] <- 30.5
+print(list_data)
+```
+```{r}
+# delete last element
+list_data[4] <- NULL
+list_data
+```
+## How to converts list to vectors in R?
+Convert list to vector using unlist().
+```{r}
+print(unlist(list_data))
+```
+
+
+
+
